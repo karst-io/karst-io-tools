@@ -11,8 +11,8 @@ parser.add_argument('file', action='store')
 
 args = parser.parse_args()
 
-print args.server
-print args.file
+#print args.server
+#print args.file
 
 es = Elasticsearch()
 
