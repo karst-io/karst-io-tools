@@ -30,4 +30,5 @@ for entrance in jobj['entrances']:
 	latitude = lowest_accuracy_obj['lat']
 	longitude = lowest_accuracy_obj['lon']
 	entrance['location'] = {'lat': latitude, 'lon': longitude}
+	entrance['code'] = jobj['code']
 	es.index(index='entrances', doc_type='entrance', body=entrance)
