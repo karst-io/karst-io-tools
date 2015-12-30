@@ -13,10 +13,10 @@ for index in indices_delete:
 
 settings = {
 "settings": {
-  "dynamic": False,
+  "dynamic": True,
 },
 "mappings": {
-  "entrances": 
+  "entrance": 
   {
     "properties": 
     {
