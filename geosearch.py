@@ -13,6 +13,7 @@ args = parser.parse_args()
 es = Elasticsearch([args.server])
 
 query_body = {
+  "size": 1000,
   "query": { 
     "match_all": {}
   },
